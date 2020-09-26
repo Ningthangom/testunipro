@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>First Group Project</title>
+    <link rel="stylesheet" href="gameplay.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="menu-icon">
+        <span class="fas fa-bars"></span></div>
+        <div class="logo">Part time rug bugs</div>
+        <div class="nav-items">
+        <li><a href="#">Score</a></li>
+        <li><a href="#">TIME</a></li>
+        <li><a href="#">MOVES</a></li>
+        <li><a href="#">CARD REMAIN</a></li>
+        <li><a href="gameplay.html">RETURN</a></li>
+</div>
+</nav>
+
+
+    <div class="content">
+      <header class="space">Present cards here</header>
+</div>
+<script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    
+    menuBtn.onclick = ()=>{
+      items.classList.add("active");
+      menuBtn.classList.add("hide");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = ()=>{
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      searchBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      form.classList.remove("active");
+      cancelBtn.style.color = "#ff3d00";
+    }
+    searchBtn.onclick = ()=>{
+      form.classList.add("active");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+  </script>
+
+  </body>
+</html>
